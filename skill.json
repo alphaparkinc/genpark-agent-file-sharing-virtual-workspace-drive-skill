@@ -1,0 +1,35 @@
+{
+  "name": "genpark-agent-file-sharing-virtual-workspace-drive-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Secure AI agent file sharing, virtual workspace drive & artifact manager.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "file-sharing",
+    "workspace-drive",
+    "artifact-manager",
+    "agent-storage",
+    "ph-august14"
+  ],
+  "inputs": {
+    "file_name": {
+      "type": "string"
+    },
+    "access_permissions": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "storage_uri": {
+      "type": "string"
+    },
+    "file_hash_sha256": {
+      "type": "string"
+    },
+    "share_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
